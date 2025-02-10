@@ -25,23 +25,22 @@ const Portofolio = (props) => {
       }
     return (
         <div className='container_portofolio' ref={props.refportofolio}>
-           <motion.div 
-             initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}
+           <div 
+             
               className='title_portofolio'>
             <h5>Portofolio</h5>
             <div className='speciality'>
             <div></div><p>Mes projets web & mobile</p>
             </div>
-           </motion.div>
+           </div>
 
            <div className='projets'>
             
                 {
                     projet.map((projet,indexprojet)=>{
                           return(
-                          <motion.div 
+                          <div 
                             key={indexprojet}
-                            initial={{ opacity: 0, y: 300 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}
                             style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(101, 0, 101,0.3)"}}
                             className={projet.typeproject==="web"?'projet web':'projet mobile'}>
                                 {/**
@@ -53,7 +52,7 @@ const Portofolio = (props) => {
                                  * 
                                  */}
                                  <img src={`/images/${projet.imageproject}`} alt="" />
-                            </motion.div>
+                            </div>
                           )
                     }
                     )

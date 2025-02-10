@@ -57,18 +57,18 @@ const Contact = (props) => {
 
     return (
         <div className='container_contact' ref={props.refcontact}>
-            <motion.div 
-             initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}
+            <div 
+            
               className='title_contact'>
             <h5>Contactez-Moi</h5>
             <div className='speciality'>
             <div></div><p>Témoingnages de quelques clients</p>
             </div>
-           </motion.div>
+           </div>
 
 
-           <motion.div className='formulaire_contact'
-           initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}
+           <div className='formulaire_contact'
+          
            >
                 <form action="" onSubmit={envoyer} ref={form}>
                 <div><span style={{}}><FaUser style={{color:"white"}} /></span><input  onChange={(e)=>{setnom(e.target.value)}} type="text" name="nom"  id="" placeholder='Nom / Prénom'/></div>
@@ -87,7 +87,7 @@ const Contact = (props) => {
                    <div><FaFacebook style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><a href="https://www.facebook.com/abednego.kodjaou?locale=fr_FR"><p>Abed-Négo Kodjaou</p></a></div>
                    <div><FaWhatsapp style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><a href="https://wa.me/+2290168364255"><p>+229 0168364255</p></a></div>
                 </div>
-           </motion.div>
+           </div>
 
            <div className="footer">
 

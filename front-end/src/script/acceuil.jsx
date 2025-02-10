@@ -135,12 +135,7 @@ function clickacceuil() {
  
   return (
     <div ref={acceuil} className='container_acceuil'>
-        <motion.nav
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        style={{backgroundColor:selector.bacgroundColor==="black"?"black":"white"}}
-        >
+        <nav style={{backgroundColor:selector.bacgroundColor==="black"?"black":"white"}}>
            <div className='container_navigation'>
            <div><img src="/images/Logo.png" alt="" /></div>
            <div className='link'>
@@ -165,42 +160,35 @@ function clickacceuil() {
               </div>
            </div>
            </div>
-        </motion.nav>
+        </nav>
         <section>
             <div className='container_info'>
-            <motion.div
-            initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}
-            className='letgo'>
+            <div className='letgo'>
                   <div className='hr'></div><p>Let's go ✌️😎</p>
-            </motion.div>
+            </div>
 
 
-            <motion.p
-                className='presentationbreve'
-                initial={{ opacity: 0, y: 250 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}
-                style={{display:"flex"}}
-            >
+            <p style={{display:"flex"}}>
                <h2><span>Je suis Abed-Négo</span><div/>Développeur Web & Mobile</h2>
-            </motion.p>
+            </p>
 
 
-                <motion.p
+                <p
                    className='presentation'
-                    initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}
+                    
                 >
                       Je suis Abed-Négo Kodjaou, développeur web et mobile spécialisé en React.js et React Native. Passionné par la création d’applications performantes et intuitives, j’allie design moderne et code optimisé pour offrir des expériences utilisateur fluides et engageantes. 🚀
-                </motion.p>
+                </p>
 
-                <motion.div 
-                   initial={{ opacity: 0, x: -400 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}
+                <div 
+                   
                    className='conteneur_button'>
                   <button className="downloadcv" type="button" style={{border:"solid 1px #650065"}}><a href="/cv.pdf"  download="cv.pdf" style={{color:"#650065"}}>Telecharger mon cv</a></button>
                   <button onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol} className="lienapropos" type="button" style={{border:"solid 1px #650065",color:"white",backgroundColor:"#650065"}}>A propos de moi</button>
-                </motion.div>
-                <motion.div
-                initial={{ opacity: 0, x: -450 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}
+                </div>
+                <div
                 className='client'
-                ><p>1+ de clients</p><div className="hrv"></div><div style={{display:"flex",gap:10,paddingLeft:10}}><FontAwesomeIcon icon={faGithub} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faWhatsapp} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faFacebook} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faUpwork} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faLinkedinIn} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /></div></motion.div>
+                ><p>1+ de clients</p><div className="hrv"></div><div style={{display:"flex",gap:10,paddingLeft:10}}><FontAwesomeIcon icon={faGithub} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faWhatsapp} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faFacebook} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faUpwork} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faLinkedinIn} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /></div></div>
             
              
             
@@ -210,10 +198,7 @@ function clickacceuil() {
 
 
             <div className='container_image'>
-              <motion.img 
-              initial={{ opacity: 0, y: 200 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
+              <img 
               src={selector.bacgroundColor==="white"?"./images/Design.png":"./images/Designn.png"} alt="" />
             </div>
 
