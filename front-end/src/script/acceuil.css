@@ -241,7 +241,7 @@ section .container_info  .conteneur_button button a{
         justify-content: center;
     }
     section .container_info .presentation{
-        text-align: center;
+        text-align: justify;
     }
 
     section .container_info  .conteneur_button button{
@@ -285,7 +285,15 @@ section .container_info  .conteneur_button button a{
         justify-content: center;
     }
     section .container_info  .conteneur_button button{
-        width: 70%;
+        width: 45%;
+        height: 40px;
+    }
+    section .container_info  .conteneur_button .downloadcv{
+        font-size: 12px;
+    }
+       
+    section .container_info  .conteneur_button .lienapropos{
+         font-size: 12px;
     }
 
 }
