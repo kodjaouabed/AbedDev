@@ -279,10 +279,10 @@ section .container_info  .conteneur_button button a{
     }
     section .container_info  .conteneur_button{
         flex-wrap: wrap;
+        justify-content: center;
     }
     section .container_info  .conteneur_button button{
-        width: 100%;
-        margin-top: 20px;
+        width: 70%;
     }
 
 }
