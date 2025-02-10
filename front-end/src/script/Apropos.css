@@ -25,8 +25,8 @@
     color: #650065;
     font-size: 20px;
 }
-.container_apropos .apropos p{
-    font-size: 15px;
+.container_apropos .apropos p h6{
+    font-size: 12px;
 }
 .container_apropos .apropos button{
     width: 30%;
@@ -75,13 +75,12 @@
 
 
 @media screen and (max-width:740px){
+    .container_apropos{
+        margin-top: 30px;
+    }
     
     .container_apropos .apropos{
         min-height: 90vh;
-    }
-    
-    .container_apropos .image_présentation{
-        width: 100%;
     }
 }
 
@@ -91,30 +90,29 @@
        text-align:center;
     }
     .container_apropos .apropos p{
-        text-align: center;
+        text-align: justify;
     }
     .container_apropos .apropos button{
-        width: 70%;
+        width: 50%;
         display: block;
         margin: auto;
     }
+    .container_apropos .image_présentation{
+       width: 100%;
+    }
     
 }
 
 
 
 
-@media screen and (max-width:500px){
+@media screen and (max-width:400px){
     
     .container_apropos .apropos{
-        min-height: 120vh;
+        min-height: 110vh;
     }
 }
 
 
-@media screen and (max-width:400px){
-    .container_apropos{
-    width: 100%;
-}
-}
+
 

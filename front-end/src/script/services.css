@@ -71,11 +71,14 @@
      }
 }
 
+
+
 @media screen and (max-width:400px) {
     .container_services .services div{
         width: 100%;
         margin: auto;
         margin-top: 50px;
+        padding: 2px;
     }
     .icon{
         display: block;
@@ -84,9 +87,11 @@
 
     .container_services .services div p{
         text-align: center;
-     }
+        margin-left:0px;
+}
      
      .container_services .services div p h6{
          text-align: center;
-      }
+   }
+      
 }
