@@ -168,9 +168,11 @@ function clickacceuil() {
             </div>
 
 
-            <p style={{display:"flex"}}>
+            
+            <p className="presentationbreve" style={{display:"flex"}}>
                <h2><span>Je suis Abed-Négo</span><div/>Développeur Web & Mobile</h2>
             </p>
+            
 
 
                 <p

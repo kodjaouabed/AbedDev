@@ -108,7 +108,7 @@ section .container_info .letgo div{
 section .container_info .presentationbreve h2{
    display: flex;
    align-items: center;
-   font-size: 25px;
+   font-size: 18px;
    gap: 10px;
    flex-wrap: wrap;
 }
@@ -235,27 +235,6 @@ section .container_info  .conteneur_button button a{
         text-align: center;
     }
 
-    section .container_info  .conteneur_button{
-        justify-content: center;
-    }
-    section .container_info  .conteneur_button button{
-        width: 50%;
-        height: 60px;
-        margin-top: 50px;
-    }
-    section .container_image img{
-        width: 100%;
-    }
-}
-
-
-
-
-
-@media screen and (max-width:500px) {
-    nav .container_navigation .buttonnav button{
-        display: none;
-    }
     section .container_info  .conteneur_button button{
         width: 100%;
     }
@@ -266,10 +245,24 @@ section .container_info  .conteneur_button button a{
         margin-top: 0px;
         flex-wrap: wrap;
     }
+    section .container_image img{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width:500px) {
+    nav .container_navigation .buttonnav button{
+        display: none;
+    }
     
 }
 @media screen and (max-width:400px) {
     section .container_info .presentationbreve h2{
-        font-size: 20px;
+        font-size: 12px;
     }
 }
