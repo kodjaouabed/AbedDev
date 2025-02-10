@@ -202,6 +202,9 @@ section .container_info  .conteneur_button button a{
     nav .container_navigation .link{
         display: none;
     }
+    section{
+        margin-top: 0px;
+    }
     section .container_image{
         width: 100%;
         display: flex;
