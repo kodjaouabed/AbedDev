@@ -25,8 +25,9 @@
     color: #650065;
     font-size: 20px;
 }
-.container_apropos .apropos p h6{
-    font-size: 12px;
+.container_apropos .apropos p{
+    font-size: 15px;
+    opacity: 0.7;
 }
 .container_apropos .apropos button{
     width: 30%;
