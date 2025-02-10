@@ -1,0 +1,120 @@
+.container_apropos{
+    width: 90%;
+    min-height: 120vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container_apropos .image_présentation{
+    width: 50%;
+    height: 100vh;
+}
+.container_apropos .apropos{
+    width: 50%;
+    height: 50vh;
+}
+.container_apropos .image_présentation img{
+    width: 100%;
+    height: 100vh;
+}
+
+.container_apropos .apropos h5{
+    color: #650065;
+    font-size: 20px;
+}
+.container_apropos .apropos p{
+    font-size: 15px;
+}
+.container_apropos .apropos button{
+    width: 30%;
+    color: #650065;
+    border: 1px solid #650065;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container_apropos .apropos button:hover{
+    color: white;
+    border: 1px solid #650065;
+    background-color: #650065;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+
+
+
+
+@media screen and (max-width:1000px){
+    .container_apropos {
+        flex-wrap: wrap;
+    }
+    
+    .container_apropos .image_présentation{
+        width: 80%;
+        height: 100vh;
+        order: 2;
+        margin: auto;
+    }
+    .container_apropos .apropos{
+        width: 100%;
+        min-height: 70vh;
+        order: 1;
+        line-height: 30px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:740px){
+    
+    .container_apropos .apropos{
+        min-height: 90vh;
+    }
+    
+    .container_apropos .image_présentation{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .container_apropos .apropos h5{
+       text-align:center;
+    }
+    .container_apropos .apropos p{
+        text-align: center;
+    }
+    .container_apropos .apropos button{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width:500px){
+    
+    .container_apropos .apropos{
+        min-height: 120vh;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .container_apropos{
+    width: 100%;
+}
+}
+

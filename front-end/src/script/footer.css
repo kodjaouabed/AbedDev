@@ -1,0 +1,19 @@
+.container_footer{
+   width: 90%;
+   margin: auto;
+ }
+
+.container_footer hr{
+   height: 1px;
+   border: 1px solid #650065;
+   background-color: #650065;
+   margin-top: 50px;
+}
+
+.container_footer p{
+   text-align: center;
+}
+
+.container_footer p span{
+    color: #650065;
+}

@@ -1,0 +1,92 @@
+.container_services{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+.container_services h5{
+    color: #650065;
+    font-size: 20px;
+}
+
+.container_services .speciality{
+   width: 100%;
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   margin-top: -30px;
+}
+
+.container_services .speciality div{
+    width: 5px;
+    height: 20px;
+    background-color: #650065;
+    
+}
+
+.container_services .services{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.container_services .services div{
+   width: 30%;
+   min-height: 200px;
+   border-radius: 10px;
+   margin-top: 100px;
+   cursor: pointer;
+}
+
+.container_services .services div p{
+   margin-left: 20px;
+}
+.container_services .services div p span{
+    font-weight: bold;
+}
+.container_services .services div p h6{
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: -10px;
+    font-weight: 100;
+ }
+
+.container_services .services div:hover{
+    
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .container_services .services div{
+        width: 45%;
+     }
+}
+
+@media screen and (max-width:700px) {
+    .container_services .services div{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+     }
+}
+
+@media screen and (max-width:400px) {
+    .container_services .services div{
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .icon{
+        display: block;
+        text-align: center;
+    }
+
+    .container_services .services div p{
+        text-align: center;
+     }
+     
+     .container_services .services div p h6{
+         text-align: center;
+      }
+}

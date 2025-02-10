@@ -1,0 +1,7 @@
+body{
+    user-select: none;
+}
+
+button{
+    transition: 0.5s ease-in;
+}

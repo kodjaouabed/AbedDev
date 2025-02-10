@@ -1,0 +1,144 @@
+.container_contact{
+    width: 90%;
+    min-height: 50vh;
+    margin: auto;
+}
+
+.container_contact .title_contact h5{
+    color: #650065;
+    font-size: 20px;
+}
+.container_contact .title_contact .speciality{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: -30px;
+}
+  
+.container_contact .title_contact .speciality div{
+    width: 5px;
+    height: 20px;
+    background-color: #650065;
+}
+
+.container_contact .formulaire_contact{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container_contact .formulaire_contact form{
+   width: 80%;
+}
+.container_contact .formulaire_contact form div{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.container_contact .formulaire_contact form div span{
+    background-color: #650065;
+    padding: 8.5px;
+}
+.container_contact .formulaire_contact form div input{
+    width: 60%;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+}
+.container_contact .formulaire_contact form div textarea{
+    width: 67%;
+    padding: 5.5px;
+    height: 100px;
+    border-radius: 5px;
+}
+.container_contact .formulaire_contact form div button{
+   padding: 10px;
+   width: 40%;
+   border:1px solid #650065;
+   background-color: #650065;
+   color: white;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.container_contact .formulaire_contact form div input::placeholder{
+    color: #650065;
+    opacity: 0.5;
+}
+.container_contact .formulaire_contact form div textarea::placeholder{
+    color: #650065;
+    opacity: 0.5;
+}
+
+.container_contact .formulaire_contact .reseau{
+   width: 50%;
+   margin-top: 20px;
+}
+
+.container_contact .formulaire_contact .reseau div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.container_contact .formulaire_contact .reseau div a{
+   text-decoration: none;
+   color: black;
+}
+
+.container_contact .formulaire_contact .reseau div input{
+    width: 50%;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+}
+
+.container_contact .formulaire_contact .reseau div button{
+    width: 20%;
+    border: 1px solid #650065;
+    color: white;
+    padding: 10px;
+    background-color: #650065;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container_contact .formulaire_contact .reseau div input::placeholder{
+    color: #650065;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    .container_contact .formulaire_contact .reseau div button{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container_contact .formulaire_contact form{
+        width: 100%;
+     }
+
+     .container_contact .formulaire_contact form div input{
+        width: 100%;
+    }
+    .container_contact .formulaire_contact form div textarea{
+        width: 100%;
+    }
+    .container_contact .formulaire_contact form div button{
+       width: 60%;
+       margin: auto;
+    }
+
+    .container_contact .formulaire_contact .reseau{
+        width: 100%;
+        text-align: right;
+    }
+}

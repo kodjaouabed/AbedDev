@@ -1,0 +1,89 @@
+.section_client{
+   width: 90%;
+   margin:auto;
+   margin-top: 100px;
+}
+
+.section_client .title_client h5{
+    color: #650065;
+    font-size: 20px;
+}
+.section_client .title_client .speciality{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: -30px;
+}
+  
+.section_client .title_client .speciality div{
+    width: 5px;
+    height: 20px;
+    background-color: #650065;
+}
+.section_client .container_client{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    overflow-x: hidden;
+    user-select: none;
+    margin-top: 50px;
+}
+.section_client .container_client div{
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.section_client .container_client div .nom{
+    margin-top: -20px;
+    font-weight: 600;
+}
+.section_client .container_client div .fonction{
+    margin-top: -10px;
+    opacity: 0.5;
+}
+.section_client .container_client div .comment{
+    margin-top: -10px;
+    width: 90%;
+    margin: auto;
+}
+.section_client .container_client div .note{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+.section_client .container_client div p{
+    text-align: center;
+}
+.section_client .container_client div img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    .section_client .container_client div{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .section_client .container_client div{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section_client .container_client div{
+        width: 100%;
+    }
+}

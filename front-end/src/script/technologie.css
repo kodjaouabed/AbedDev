@@ -1,0 +1,54 @@
+.section_tech{
+  padding-top: 50px;
+}
+
+.section_tech .title_tech{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.section_tech .title_tech h5{
+  color: #650065;
+  font-size: 20px;
+}
+.section_tech .title_tech .speciality{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.section_tech .title_tech .speciality div{
+  width: 5px;
+  height: 20px;
+  background-color: #650065;
+}
+
+
+.container_technologie {
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    gap: 100px;
+    overflow-x: hidden; /* Cache la barre de défilement */
+    cursor: grab; /* Change le curseur quand la souris survole */
+    user-select: none;
+  }
+  
+  .container_technologie div {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  
+
+  
+  
+  .container_technologie:active {
+    cursor: grabbing; /* Change le curseur quand on fait glisser */
+  }
+  
