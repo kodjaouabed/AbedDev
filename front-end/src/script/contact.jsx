@@ -50,7 +50,7 @@ const Contact = (props) => {
       }
 
       function fnewsletter() {
-        axios.post("http://localhost:3006/newsletter",{newsletter:newsletter})
+        axios.post("https://abed-dev-qk8f.vercel.app/newsletter",{newsletter:newsletter})
         .then((res)=>{alert(res.data)})
         .catch((err)=>{console.log(err)})
       }
