@@ -19,6 +19,10 @@
     align-items: center;
     margin-top: -30px;
 }
+
+.container_apropos .title_propos .speciality p{
+   font-weight: 200;
+}
   
 .container_apropos .title_propos .speciality div{
     width: 5px;

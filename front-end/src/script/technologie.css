@@ -26,6 +26,10 @@
   background-color: #650065;
 }
 
+.section_tech .title_tech .speciality p{
+  font-weight: 200;
+}
+
 
 .container_technologie {
     width: 90%;

@@ -22,7 +22,9 @@
     background-color: #650065;
 }
 
-
+.container_portofolio .title_portofolio .speciality p{
+    font-weight: 200;
+  }
 
 .container_portofolio .projets{
     width: 100%;

@@ -62,7 +62,7 @@ const Contact = (props) => {
               className='title_contact'>
             <h5>Contactez-Moi</h5>
             <div className='speciality'>
-            <div></div><p>Témoingnages de quelques clients</p>
+            <div></div><p>Parlons-en de vos projets</p>
             </div>
            </div>
 

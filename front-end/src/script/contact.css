@@ -22,6 +22,10 @@
     background-color: #650065;
 }
 
+.container_contact .title_contact .speciality p{
+    font-weight: 200;
+}
+
 .container_contact .formulaire_contact{
     display: flex;
     align-items: flex-start;
@@ -86,6 +90,10 @@
    text-decoration: none;
    color: black;
 }
+
+.container_contact .formulaire_contact .reseau div p{
+    font-weight: 300;
+ }
 
 .container_contact .formulaire_contact .reseau div input{
     width: 50%;

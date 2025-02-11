@@ -22,7 +22,9 @@
     background-color: #650065;
     
 }
-
+.container_services .speciality p{
+    font-weight: 200;
+ }
 .container_services .services{
    display: flex;
    justify-content: space-between;
