@@ -204,15 +204,52 @@ section .container_info  .conteneur_button button a{
     height: 100vh;
     background-color: #650065;
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 0;
     transition: 1s ease-in;
+    padding-left: 10px;
 }
 
 .menu h6{
-    color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
 }
 
+.menu h5{
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 100;
+}
+
+.menu p{
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 100;
+}
+
+.menu .hr{
+    width: 40%;
+    height: 2px;
+    background-color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+.menu button{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid white;
+    color: #650065;
+}
+.menu a{
+   text-decoration: none;
+   color: white;
+   display: block;
+   margin-top: 10px;
+   font-weight: 100;
+}
 
 
 

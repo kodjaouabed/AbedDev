@@ -240,7 +240,19 @@ function fmenu() {
 
         <div className='menu' style={{marginLeft:"-400px"}}>
              <p><h6>APROPOS</h6></p>
-             <p><hr /></p>
+             <div className="hr"></div>
+             <h5>Developpeur web fullstack &<br /> d'application mobile.</h5>
+             <h5>N'hesitez pas à me contacter pour tout type de projet de création de site internet , d'appliction web et d'application mobile.</h5>
+             <button>EN SAVOIR PLUS</button>
+             <p><h6>NAVIGATION</h6></p>
+             <div className="hr"></div>
+             <a>Acceuil</a>
+             <a>Apropos</a>
+             <a>Services</a>
+             <a>Compétences</a>
+             <a>Portofolio</a>
+             <a>Témoignages</a>
+             <a>Contact</a>
         </div>
 
 
