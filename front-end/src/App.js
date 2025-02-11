@@ -58,7 +58,7 @@ function App() {
   }
 
   function clicktemoignage() {
-    reftechnologies.current.scrollIntoView({ behavior: 'smooth' });
+    refclient.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   function clickcontact() {

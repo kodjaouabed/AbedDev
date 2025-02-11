@@ -12,7 +12,7 @@ const Apropos = (props) => {
 
             <div
            
-            className='image_présentation'><img src={selector.bacgroundColor==="white"?"./images/presentation.png":"./images/presentation-.png"} alt="" /></div>
+            className='image_présentation'><img src={selector.bacgroundColor==="white"?"./images/presentation.png":"./images/presentationn.png"} alt="" /></div>
             <div className='apropos'>
             <div 
             
