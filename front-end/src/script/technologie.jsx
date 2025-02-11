@@ -192,7 +192,7 @@ export default function Technologie(props) {
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
     >
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={html} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*90)/100,strokeDashoffset: visiblehtml ? 0 : (409 * 90) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -201,7 +201,7 @@ export default function Technologie(props) {
          <h6 style={{marginLeft:70,marginTop:40}}><FaHtml5 style={{fontSize:30,color:selector.bacgroundColor==="white"?"#650065":"white"}} /></h6>
       </div>
 
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={css} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*80)/100,strokeDashoffset: visiblecss ? 0 : (409 * 80) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -213,7 +213,7 @@ export default function Technologie(props) {
 
 
 
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={js} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*75)/100,strokeDashoffset: visiblejs ? 0 : (409 * 75) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -224,7 +224,7 @@ export default function Technologie(props) {
       
 
 
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={react} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*75)/100,strokeDashoffset: visiblereact ? 0 : (409 * 75) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -234,7 +234,7 @@ export default function Technologie(props) {
       </div>
 
 
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={node} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*80)/100,strokeDashoffset: visiblenode ? 0 : (409 * 80) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -244,7 +244,7 @@ export default function Technologie(props) {
       </div>
 
 
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={sql} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*90)/100,strokeDashoffset: visiblesql ? 0 : (409 * 90) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -254,7 +254,7 @@ export default function Technologie(props) {
       </div>
 
 
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={figma} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*90)/100,strokeDashoffset: visiblefigma ? 0 : (409 * 90) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -266,7 +266,7 @@ export default function Technologie(props) {
 
 
 
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={git} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*90)/100,strokeDashoffset: visiblegit ? 0 : (409 * 90) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -278,7 +278,7 @@ export default function Technologie(props) {
 
 
 
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={github} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*90)/100,strokeDashoffset: visiblegithub ? 0 : (409 * 90) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -289,7 +289,7 @@ export default function Technologie(props) {
       
 
 
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle ref={php} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*90)/100,strokeDashoffset: visiblephp ? 0 : (409 * 90) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>
@@ -299,7 +299,7 @@ export default function Technologie(props) {
       </div>
       
       
-      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">
            <circle ref={wordpress} cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#ddd"}}></circle>
            <circle  cx="150" cy="62" r="50" style={{fill:"none",strokeWidth:15,stroke:"#650065",strokeDasharray:(314*60)/100,strokeDashoffset: visiblewordpress ? 0 : (409 * 60) / 100,strokeLinecap:"round",transition: "stroke-dashoffset 2s ease-in-out"}}></circle>

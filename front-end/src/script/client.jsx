@@ -67,7 +67,7 @@ const Client = (props) => {
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
     >
-      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
         <p className='image'><img src="https://media.istockphoto.com/id/1171169099/fr/photo/homme-avec-les-bras-crois%C3%A9s-disolement-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=csQeB3utGtrGeb3WmdSxRYXaJvUy_xqlhbOIZxclcGA=" alt="" /><BiSolidCommentDetail style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} /></p>
         <p className='nom'>Abed-Nego</p>
         <p className='fonction'>Développeur web</p>
@@ -84,27 +84,7 @@ const Client = (props) => {
 
 
 
-      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
-        <p className='image'><img src="https://media.istockphoto.com/id/1171169099/fr/photo/homme-avec-les-bras-crois%C3%A9s-disolement-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=csQeB3utGtrGeb3WmdSxRYXaJvUy_xqlhbOIZxclcGA=" alt="" /><BiSolidCommentDetail style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} /></p>
-        <p className='nom'>Abed-Nego</p>
-        <p className='fonction'>Développeur web</p>
-        <p className='comment'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, numquam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, numquam.</p>
-        <p className='note'>
-          <LiaStarSolid style={{color:"#650065",fontSize:20}} />
-          <LiaStarSolid style={{color:"#650065",fontSize:20}}/>
-          <LiaStarSolid style={{color:"#650065",fontSize:20}}/>
-          <LiaStarSolid style={{color:"#650065",fontSize:20}}/>
-          <RiStarSLine  style={{fontSize:23,color:"#650065"}}/>
-        </p>
-      </div>
-
-
-
-
-
-
-
-      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
         <p className='image'><img src="https://media.istockphoto.com/id/1171169099/fr/photo/homme-avec-les-bras-crois%C3%A9s-disolement-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=csQeB3utGtrGeb3WmdSxRYXaJvUy_xqlhbOIZxclcGA=" alt="" /><BiSolidCommentDetail style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} /></p>
         <p className='nom'>Abed-Nego</p>
         <p className='fonction'>Développeur web</p>
@@ -124,10 +104,7 @@ const Client = (props) => {
 
 
 
-
-
-
-      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
         <p className='image'><img src="https://media.istockphoto.com/id/1171169099/fr/photo/homme-avec-les-bras-crois%C3%A9s-disolement-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=csQeB3utGtrGeb3WmdSxRYXaJvUy_xqlhbOIZxclcGA=" alt="" /><BiSolidCommentDetail style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} /></p>
         <p className='nom'>Abed-Nego</p>
         <p className='fonction'>Développeur web</p>
@@ -150,9 +127,32 @@ const Client = (props) => {
 
 
 
+      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
+        <p className='image'><img src="https://media.istockphoto.com/id/1171169099/fr/photo/homme-avec-les-bras-crois%C3%A9s-disolement-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=csQeB3utGtrGeb3WmdSxRYXaJvUy_xqlhbOIZxclcGA=" alt="" /><BiSolidCommentDetail style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} /></p>
+        <p className='nom'>Abed-Nego</p>
+        <p className='fonction'>Développeur web</p>
+        <p className='comment'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, numquam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, numquam.</p>
+        <p className='note'>
+          <LiaStarSolid style={{color:"#650065",fontSize:20}} />
+          <LiaStarSolid style={{color:"#650065",fontSize:20}}/>
+          <LiaStarSolid style={{color:"#650065",fontSize:20}}/>
+          <LiaStarSolid style={{color:"#650065",fontSize:20}}/>
+          <RiStarSLine  style={{fontSize:23,color:"#650065"}}/>
+        </p>
+      </div>
 
 
-      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(255,255, 255, 0.3)"}}>
+
+
+
+
+
+
+
+
+
+
+      <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
         <p className='image'><img src="https://media.istockphoto.com/id/1171169099/fr/photo/homme-avec-les-bras-crois%C3%A9s-disolement-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=csQeB3utGtrGeb3WmdSxRYXaJvUy_xqlhbOIZxclcGA=" alt="" /><BiSolidCommentDetail style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} /></p>
         <p className='nom'>Abed-Nego</p>
         <p className='fonction'>Développeur web</p>

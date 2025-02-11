@@ -17,7 +17,7 @@ const Services = (props) => {
             <div className='services'>
                      <div
                     
-                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(101, 0, 101,0.3)":"5px 5px 10px rgba(101, 0, 101,0.3)"}}>
+                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"1px 1px 10px rgba(101, 0, 101,0.3)"}}>
                       <span className='icon'><FaGlobe  style={{color:"white",fontSize:20,padding:10,backgroundColor:"#650065",borderRadius:"50%",marginTop:10,marginLeft:20}} /></span>
                       <p><span>Conception de sites web</span></p>
                       <p>
@@ -31,7 +31,7 @@ const Services = (props) => {
 
                      <div
                     
-                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(101, 0, 101,0.3)"}}>
+                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"1px 1px 10px rgba(101, 0, 101,0.3)"}}>
                       <span className='icon'><CiMobile3 style={{color:"white",fontSize:20,padding:10,backgroundColor:"#650065",borderRadius:"50%",marginTop:10,marginLeft:20}} /></span>
                       <p><span>Conception d'app mobile</span></p>
                       <p>
@@ -42,7 +42,7 @@ const Services = (props) => {
 
                      <div
                     
-                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(101, 0, 101,0.3)"}}>
+                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"1px 1px 10px rgba(101, 0, 101,0.3)"}}>
                       <span className='icon'><GiPencilBrush style={{color:"white",fontSize:20,padding:10,backgroundColor:"#650065",borderRadius:"50%",marginTop:10,marginLeft:20}} /></span>
                       <p><span>Conception d’interfaces UI/UX</span></p>
                       <p>
@@ -53,7 +53,7 @@ const Services = (props) => {
 
                      <div
                     
-                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(101, 0, 101,0.3)"}}>
+                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"1px 1px 10px rgba(101, 0, 101,0.3)"}}>
                       <span className='icon'><CiServer  style={{color:"white",fontSize:20,padding:10,backgroundColor:"#650065",borderRadius:"50%",marginTop:10,marginLeft:20}} /></span>
                       <p><span>Intégration d'API</span></p>
                       <p>
@@ -64,7 +64,7 @@ const Services = (props) => {
 
                      <div
                     
-                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(101, 0, 101,0.3)"}}>
+                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"1px 1px 10px rgba(101, 0, 101,0.3)"}}>
                       <span className='icon'><FaSearch  style={{color:"white",fontSize:20,padding:10,backgroundColor:"#650065",borderRadius:"50%",marginTop:10,marginLeft:20}} /></span>
                       <p><span>Optimisation SEO</span></p>
                       <p>
@@ -74,7 +74,7 @@ const Services = (props) => {
 
                      <div
                     
-                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(101, 0, 101,0.3)"}}>
+                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"1px 1px 10px rgba(101, 0, 101,0.3)"}}>
                       <span className='icon'><FaTools  style={{color:"white",fontSize:20,padding:10,backgroundColor:"#650065",borderRadius:"50%",marginTop:10,marginLeft:20}} /></span>
                       <p><span>Maintenance et support technique</span></p>
                       <p>
