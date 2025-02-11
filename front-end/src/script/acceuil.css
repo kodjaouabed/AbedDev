@@ -204,10 +204,11 @@ section .container_info  .conteneur_button button a{
     height: 100vh;
     background-color: #650065;
     position: fixed;
-    top: 100px;
+    top: 80px;
     left: 0;
     transition: 1s ease-in;
     padding-left: 10px;
+    padding-top: 20px;
 }
 
 .menu h6{
@@ -232,14 +233,14 @@ section .container_info  .conteneur_button button a{
 }
 
 .menu .hr{
-    width: 40%;
+    width: 15%;
     height: 2px;
     background-color: white;
     text-align: center;
     margin-top: -30px;
 }
 .menu button{
-    width: 70%;
+    width: 50%;
     padding: 10px;
     border: 1px solid white;
     color: #650065;
