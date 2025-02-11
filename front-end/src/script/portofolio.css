@@ -116,16 +116,13 @@
     .container_portofolio .projets .web{
         height: 250px;
      }
-    .container_portofolio{
-        width: 98%;
-    }
-    .container_portofolio .projets .mobile{
-        width: 90%;
-    }
 }
 
 @media screen and (max-width:400px) {
+    .container_portofolio .projets .web{
+        height: 200px;
+     }
     .container_portofolio .projets .mobile{
-        width: 100%;
+        height: 350px;
     }
 }
