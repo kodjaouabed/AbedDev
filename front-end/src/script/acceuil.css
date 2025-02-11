@@ -59,7 +59,7 @@ nav .container_navigation .buttonnav div{
 }
 
 nav  .container_navigation .buttonnav .menubars{
-   display: none;
+   /*display: none;*/
 }
 nav .container_navigation .buttonnav button{
     color: white;
@@ -196,6 +196,21 @@ section .container_info  .conteneur_button button a{
 
 .details p{
     margin-top: -40px;
+}
+
+
+.menu{
+    width: 300px;
+    height: 100vh;
+    background-color: #650065;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s ease-in;
+}
+
+.menu h6{
+    color: black;
 }
 
 

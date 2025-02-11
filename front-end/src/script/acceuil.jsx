@@ -4,12 +4,13 @@ import "./acceuil.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { RiSunFill } from 'react-icons/ri';
 import { FaMoon } from "react-icons/fa";
-import {faBars, faMoon,faSun} from '@fortawesome/free-solid-svg-icons'
+import {faBars, faClose, faMoon,faSun} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faGithub, faLinkedinIn, faUpwork, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { BackgroundChange } from './reduxAction';
 import { useDispatch,useSelector } from 'react-redux'
 import { motion } from "framer-motion";
 import { useRef } from 'react';
+import { IoMdClose } from "react-icons/io";
 
 
 
@@ -27,6 +28,8 @@ export default function Acceuil(props) {
   const temoignage=useRef(null)
   const contact=useRef(null)
 
+
+  const [closeopen,setcloseopen]=useState(false)
   const [ProjetsVisible,setProjetsVisible]=useState(false)
   const [annéesExperiencesVisible, setAnnéesExperiencesVisible] = useState(false);
   const [satisfactionVisible, setSatisfactionVisible] = useState(false);
@@ -127,6 +130,16 @@ export default function Acceuil(props) {
 function clickacceuil() {
   acceuil.current.scrollIntoView({ behavior: 'smooth' });
 }
+
+
+function fmenu() {
+  setcloseopen(!closeopen)
+  if (document.querySelector(".menu").style.marginLeft==="-400px") {
+    document.querySelector(".menu").style.marginLeft="0px"
+  } else {
+    document.querySelector(".menu").style.marginLeft="-400px"
+  }
+}
   
 
 
@@ -154,8 +167,8 @@ function clickacceuil() {
                }
               </div>
               <button onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol} >Embauche-moi!</button>
-              <div className='menubars'>
-               <FontAwesomeIcon icon={faBars} style={{color:"white"}}  />
+              <div className='menubars' onClick={fmenu}>
+               <FontAwesomeIcon icon={closeopen===false?faBars:faClose} style={{color:"white"}} />
                
               </div>
            </div>
@@ -224,6 +237,13 @@ function clickacceuil() {
               <p>Satisfaction</p>
             </div>
         </div>
+
+        <div className='menu' style={{marginLeft:"-400px"}}>
+             <p><h6>APROPOS</h6></p>
+             <p><hr /></p>
+        </div>
+
+
     </div>
   )
 }
