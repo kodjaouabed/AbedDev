@@ -209,6 +209,7 @@ section .container_info  .conteneur_button button a{
     transition: 1s ease-in;
     padding-left: 10px;
     padding-top: 20px;
+    z-index: 1;
 }
 
 .menu h6{
