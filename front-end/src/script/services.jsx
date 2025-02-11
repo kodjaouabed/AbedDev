@@ -17,7 +17,7 @@ const Services = (props) => {
             <div className='services'>
                      <div
                     
-                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"5px 5px 10px rgba(101, 0, 101,0.3)"}}>
+                     style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(101, 0, 101,0.3)":"5px 5px 10px rgba(101, 0, 101,0.3)"}}>
                       <span className='icon'><FaGlobe  style={{color:"white",fontSize:20,padding:10,backgroundColor:"#650065",borderRadius:"50%",marginTop:10,marginLeft:20}} /></span>
                       <p><span>Conception de sites web</span></p>
                       <p>

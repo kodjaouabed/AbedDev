@@ -8,6 +8,24 @@
     margin-top: 100px;
 }
 
+.container_apropos .title_propos h5{
+    color: #650065;
+    font-size: 20px;
+}
+.container_apropos .title_propos .speciality{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: -30px;
+}
+  
+.container_apropos .title_propos .speciality div{
+    width: 5px;
+    height: 20px;
+    background-color: #650065;
+}
+
 .container_apropos .image_présentation{
     width: 50%;
     height: 100vh;
@@ -21,10 +39,6 @@
     height: 100vh;
 }
 
-.container_apropos .apropos h5{
-    color: #650065;
-    font-size: 20px;
-}
 .container_apropos .apropos p h6{
     font-size: 15px;
     font-weight: 100;
@@ -87,9 +101,6 @@
 
 
 @media screen and (max-width:600px){
-    .container_apropos .apropos h5{
-       text-align:center;
-    }
     .container_apropos .apropos p{
         text-align: justify;
     }
