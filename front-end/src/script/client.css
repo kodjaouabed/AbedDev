@@ -15,6 +15,17 @@
     align-items: center;
     margin-top: -30px;
 }
+
+.section_client button{
+    width: 15%;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: #650065;
+    border: 1px solid #650065;
+    border-radius: 5px;
+}
   
 .section_client .title_client .speciality div{
     width: 5px;
@@ -73,6 +84,86 @@
 
 
 
+.visiblecontainer{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    z-index: 150;
+    padding-left: 20px;
+    transition: 1s ease-in;
+}
+
+
+.visiblecontainer h6{
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: -10px;
+}
+.visiblecontainer .hr{
+    width: 15%;
+    height: 2px;
+    background-color: white;
+    text-align: center;
+    margin-top: -30px;
+}
+.visiblecontainer .form div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.visiblecontainer .form div{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.visiblecontainer .form div span{
+    background-color: #650065;
+    padding: 8.5px;
+}
+.visiblecontainer .form div input{
+    width: 70%;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid rgba(0, 0, 0,0.5);
+}
+.visiblecontainer .form div textarea{
+    width: 85%;
+    padding: 5.5px;
+    height: 100px;
+    border-radius: 5px;
+}
+.visiblecontainer .form div button{
+   padding: 10px;
+   width: 40%;
+   border:1px solid #650065;
+   background-color: #650065;
+   color: white;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.visiblecontainer .form div input::placeholder{
+    color: #650065;
+    opacity: 0.5;
+}
+.visiblecontainer .form div textarea::placeholder{
+    color: #650065;
+    opacity: 0.5;
+}
+
+.visiblecontainer .form input[type="file"] {
+    width: 82%;
+    background-color: white;
+    cursor: pointer;
+    color:#650065;
+}
+
+
 
 
 
@@ -92,4 +183,16 @@
     .section_client .container_client div{
         width: 100%;
     }
+
+    .section_client button{
+        width: 40%;
+        padding: 10px;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+        background-color: #650065;
+        border: 1px solid #650065;
+        border-radius: 5px;
+    }
+    
 }

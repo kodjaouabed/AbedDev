@@ -12,8 +12,15 @@
 
 .container_footer p{
    text-align: center;
+   font-weight: 100;
 }
 
 .container_footer p span{
     color: #650065;
+}
+
+@media screen and (max-width:700px) {
+   .container_footer p{
+      font-size: 15px;
+   }
 }
