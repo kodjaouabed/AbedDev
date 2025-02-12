@@ -51,16 +51,20 @@ const Client = (props) => {
     return (
         <div className='section_client' ref={props.refclient}>
             
-            <div 
-            
+            <motion.div 
+             initial={{ opacity: 0, y: 100 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.7 }}
               className='title_client'>
             <h5>Témoingnages</h5>
             <div className='speciality'>
             <div></div><p>Témoingnages de quelques clients</p>
             </div>
-           </div>
- <div
-     
+           </motion.div>
+ <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
       className='container_client'
       ref={containerRef}
       onMouseDown={handleMouseDown}
@@ -165,7 +169,7 @@ const Client = (props) => {
           <RiStarSLine  style={{fontSize:23,color:"#650065"}}/>
         </p>
       </div>
-    </div>
+    </motion.div>
            
         
         </div>

@@ -148,7 +148,11 @@ function fmenu() {
  
   return (
     <div ref={acceuil} className='container_acceuil'>
-        <nav style={{backgroundColor:selector.bacgroundColor==="black"?"black":"white"}}>
+        <motion.nav
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        style={{backgroundColor:selector.bacgroundColor==="black"?"black":"white"}}>
            <div className='container_navigation'>
            <div><img src="/images/Logo.png" alt="" /></div>
            <div className='link'>
@@ -173,37 +177,54 @@ function fmenu() {
               </div>
            </div>
            </div>
-        </nav>
+        </motion.nav>
         <section>
             <div className='container_info'>
-            <div className='letgo'>
+            <motion.div 
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className='letgo'>
                   <div className='hr'></div><p>Let's go ✌️😎</p>
-            </div>
+            </motion.div>
 
 
             
-            <p className="presentationbreve" style={{display:"flex"}}>
+            <motion.p 
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="presentationbreve" style={{display:"flex"}}>
                <h2><span>Je suis Abed-Négo</span><div/>Développeur Web & Mobile</h2>
-            </p>
+            </motion.p>
             
 
 
-                <p
+                <motion.p
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7 }}
                    className='presentation'
                     
                 >
                       Je suis Abed-Négo Kodjaou, développeur web et mobile spécialisé en React.js et React Native. Passionné par la création d’applications performantes et intuitives, j’allie design moderne et code optimisé pour offrir des expériences utilisateur fluides et engageantes. 🚀
-                </p>
+                </motion.p>
 
-                <div 
-                   
+                <motion.div 
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
                    className='conteneur_button'>
                   <button className="downloadcv" type="button" style={{border:"solid 1px #650065"}}><a href="/cv.pdf"  download="cv.pdf" style={{color:"#650065"}}>Telecharger mon cv</a></button>
                   <button onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol} className="lienapropos" type="button" style={{border:"solid 1px #650065",color:"white",backgroundColor:"#650065"}}>A propos de moi</button>
-                </div>
-                <div
+                </motion.div>
+                <motion.div
+                 initial={{ opacity: 0, y: 50 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.7 }}
                 className='client'
-                ><p>1+ de clients</p><div className="hrv"></div><div style={{display:"flex",gap:10,paddingLeft:10}}><FontAwesomeIcon icon={faGithub} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faWhatsapp} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faFacebook} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faUpwork} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faLinkedinIn} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /></div></div>
+                ><p>1+ de clients</p><div className="hrv"></div><div style={{display:"flex",gap:10,paddingLeft:10}}><FontAwesomeIcon icon={faGithub} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faWhatsapp} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faFacebook} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faUpwork} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /><FontAwesomeIcon icon={faLinkedinIn} style={{fontSize:20,color:selector.colorText,cursor:"pointer"}} /></div>
+                </motion.div>
             
              
             
@@ -212,10 +233,14 @@ function fmenu() {
 
 
 
-            <div className='container_image'>
+            <motion.div
+             initial={{ opacity: 0, y: 100 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.7 }}
+            className='container_image'>
               <img 
               src={selector.bacgroundColor==="white"?"./images/Design.png":"./images/Designn.png"} alt="" />
-            </div>
+            </motion.div>
 
 
 

@@ -176,16 +176,20 @@ export default function Technologie(props) {
 
   return (
     <div className='section_tech' ref={props.reftechnologies}>
-      <div 
-     
+      <motion.div 
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
       className='title_tech'>
       <h5>Technologies</h5>
         <div className='speciality'>
         <div></div><p>Mes technologies utilisées</p>
       </div>
-      </div>
-      <div
-     
+      </motion.div>
+      <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
       className='container_technologie'
       ref={containerRef}
       onMouseDown={handleMouseDown}
@@ -309,7 +313,7 @@ export default function Technologie(props) {
       </div>
 
 
-    </div>
+    </motion.div>
     </div>
   );
 } 

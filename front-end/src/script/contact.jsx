@@ -57,36 +57,46 @@ const Contact = (props) => {
 
     return (
         <div className='container_contact' ref={props.refcontact}>
-            <div 
-            
+            <motion.div 
+             initial={{ opacity: 0, y: 100 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.7 }}
               className='title_contact'>
             <h5>Contactez-Moi</h5>
             <div className='speciality'>
             <div></div><p>Parlons-en de vos projets</p>
             </div>
-           </div>
+           </motion.div>
 
 
            <div className='formulaire_contact'
           
            >
-                <form action="" onSubmit={envoyer} ref={form}>
+                <motion.form 
+                 initial={{ opacity: 0, y: 100 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.7 }}
+                 action="" onSubmit={envoyer} ref={form}>
                 <div><span style={{}}><FaUser style={{color:"white"}} /></span><input  onChange={(e)=>{setnom(e.target.value)}} type="text" name="nom"  id="" placeholder='Nom / Prénom'/></div>
                 <div><span style={{}}><MdEmail style={{color:"white"}} /></span><input onChange={(e)=>{setemail(e.target.value)}}  type="email" name="email"  id="" placeholder='Email'/></div>
                 <div><span style={{}}><BsFillTelephoneFill style={{color:"white"}} /></span><input onChange={(e)=>{settel(e.target.value)}}  type="text" name="tel"  id="" placeholder='Téléphone'/></div>
                 <div><textarea name="message" onChange={(e)=>{setmessage(e.target.value)}} id="" placeholder='Merci de  détaillé  le plus possible votre besoin afin de faciliter nos futurs échanges'></textarea></div>
                 <div><button type="submit" onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol}>Envoyer</button></div>
-                </form>
+                </motion.form>
 
               
-                <div className='reseau'>
+                <motion.div
+                 initial={{ opacity: 0, y: 100 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.7 }}
+                className='reseau'>
                 <div><input type="email" onChange={(e)=>{setnewsletter(e.target.value)}}  placeholder='email' /><button onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol} onClick={fnewsletter}>S'abonner</button></div>
                    <div><FaLocationDot style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><p>CALAVI ZE COTONOU</p></div>
                    <div><BsFillTelephoneFill style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><a href="tel:+2290168364255"><p>+229 0168364255</p></a></div>
                    <div><MdEmail style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><a href="mailto:abnegko@gmail.com"><p>abnegko@gmail.com</p></a></div>
                    <div><FaFacebook style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><a href="https://www.facebook.com/abednego.kodjaou?locale=fr_FR"><p>Abed-Négo Kodjaou</p></a></div>
                    <div><FaWhatsapp style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><a href="https://wa.me/+2290168364255"><p>+229 0168364255</p></a></div>
-                </div>
+                </motion.div>
            </div>
 
            <div className="footer">
