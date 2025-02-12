@@ -9,7 +9,7 @@ const Portofolio = (props) => {
     const [projet,setProjet]=useState([])
     const  selector = useSelector(state => state.Background);
     useEffect(() => {
-    axios.get("https://abed-dev-qk8f.vercel.app/projets")
+    axios.get("https://abed-dev-server.vercel.app/projets")
     .then(resultat=>setProjet(resultat.data))
     .catch(err=>console.log(err))
     }, [projet]);

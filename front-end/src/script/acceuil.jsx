@@ -215,8 +215,8 @@ function fmenu() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                    className='conteneur_button'>
-                  <button className="downloadcv" type="button" style={{border:"solid 1px #650065"}}><a href="/cv.pdf"  download="cv.pdf" style={{color:"#650065"}}>Telecharger mon cv</a></button>
-                  <button onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol} className="lienapropos" type="button" style={{border:"solid 1px #650065",color:"white",backgroundColor:"#650065"}}>A propos de moi</button>
+                  <button className="downloadcv" type="button" style={{border:"solid 1px #650065"}}><a href="/kodjaouabednegoCV.pdf"  download="kodjaouabednegoCV.pdf" style={{color:"#650065"}}>Telecharger mon cv</a></button>
+                  <button onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol} onClick={props.clickapropos} className="lienapropos" type="button" style={{border:"solid 1px #650065",color:"white",backgroundColor:"#650065"}}>A propos de moi</button>
                 </motion.div>
                 <motion.div
                  initial={{ opacity: 0, y: 50 }}

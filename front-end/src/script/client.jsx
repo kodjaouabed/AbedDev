@@ -59,7 +59,7 @@ const Client = (props) => {
        };
 
       useEffect(() => {
-        axios.get("https://abed-dev-qk8f.vercel.app/alltemoignages")
+        axios.get("https://abed-dev-server.vercel.app/alltemoignages")
         .then((res)=>{settemoignage(res.data)})
           .catch((err)=>{console.log(err)})
         return () => {
@@ -82,7 +82,7 @@ const Client = (props) => {
           formData.append("nomtemoin",nomtemoin)
           formData.append("profession",professiontemoin)
           formData.append("message",messagetemoin)
-          axios.post("https://abed-dev-qk8f.vercel.app/temoignage",formData,{headers:{"Content-Type":"multipart/form-data"}})
+          axios.post("https://abed-dev-server.vercel.app/temoignage",formData,{headers:{"Content-Type":"multipart/form-data"}})
           .then((res)=>{alert(res)})
           .catch((err)=>{console.log(err)})
           } else {
