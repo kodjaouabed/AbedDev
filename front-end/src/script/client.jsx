@@ -150,7 +150,7 @@ const Client = (props) => {
         <div className='form'>
           <div><span style={{}}><FaUser style={{color:"white"}} /></span><input  onChange={(e)=>{setnomtemoin(e.target.value)}} type="text" name="nomtemoin"  id="" placeholder='Nom / Prénom'/></div>
           <div><span style={{}}><AiTwotoneHdd style={{color:"white"}} /></span><input  onChange={(e)=>{setprofessiontemoin(e.target.value)}} type="text" name="profession"  id="" placeholder='Profession'/></div>
-          <div><input  onChange={unpload} type="file" name="image"/></div>
+          <div><input  onChange={unpload} accept="image/*" type="file" name="image"/></div>
           <div><textarea name="message" maxLength={286} onChange={(e)=>{setmessagetemoin(e.target.value)}} id="" placeholder='Veuillez enter votre témoignage'></textarea></div>
           <div><button type="submit" onClick={temoigner} >Envoyer</button></div>
         </div>
