@@ -27,7 +27,7 @@ const dbtemoins=mysql.createConnection({
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null, path.join(__dirname,"../front-end/public/images/imagestemoins"));
+      cb(null, path.join(__dirname,"../front-end/public/images"));
     },
     filename: (req, file, cb) => {
       const newFilename = Date.now() + path.extname(file.originalname)
