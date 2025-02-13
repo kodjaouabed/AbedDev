@@ -24,6 +24,7 @@ const Client = (props) => {
       const [nomtemoin, setnomtemoin] = useState(null);
       const [professiontemoin, setprofessiontemoin] = useState(null);
       const [messagetemoin,setmessagetemoin]=useState(null)
+      const [actualise,setactualise]=useState(true)
 
      const autoScroll = () => {
            if (containerRef.current) {
@@ -65,7 +66,7 @@ const Client = (props) => {
         return () => {
           
         };
-      }, []);
+      }, [actualise]);
        
        function unpload(e){
               const file=e.target.files[0]
@@ -84,7 +85,7 @@ const Client = (props) => {
           formData.append("profession",professiontemoin)
           formData.append("message",messagetemoin)
           axios.post("https://abedbackendportofolio.vercel.app/temoignage",formData,{headers:{"Content-Type":"multipart/form-data"}})
-          .then((res)=>{alert(res.data)})
+          .then((res)=>{alert(res.data);setactualise(!actualise)})
           .catch((err)=>{console.log(err)})
           } else {
             alert("remplissez tout les champs du formulaire")
