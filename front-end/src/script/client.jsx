@@ -121,7 +121,7 @@ const Client = (props) => {
         temoignage.map((witness,key)=>{
           return(
             <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
-        <p className='image'><img src={`/images/imagestemoins/${witness.image}`} alt="" /><BiSolidCommentDetail style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} /></p>
+        <p className='image'><img src={witness.image} alt="" /><BiSolidCommentDetail style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} /></p>
         <p className='nom'>{witness.nom}</p>
         <p className='fonction'>{witness.profession}</p>
         <p className='comment'>{witness.temoignage} </p>

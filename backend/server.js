@@ -3,6 +3,8 @@ const mysql=require("mysql")
 const multer=require("multer")
 const path = require('path');
 const cors=require("cors")
+
+const cloudinary = require('cloudinary').v2;
 const app=express()
 app.use(cors())
 app.use(express.urlencoded({extended:true}))
@@ -23,19 +25,18 @@ const dbtemoins=mysql.createConnection({
     password:"ONHF0T9LMTYvdNPu9424"
 })
 
-
-
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-      cb(null, path.join(__dirname,"../front-end/public/images"));
-    },
-    filename: (req, file, cb) => {
-      const newFilename = Date.now() + path.extname(file.originalname)
-      cb(null,newFilename);
-    },
+cloudinary.config({
+    cloud_name: 'dtldeglnc',
+    api_key: '298111192278727',
+    api_secret: 'L-SuTGBlPf8rJ832b_Yc8NIgbu4',
   });
+
+  const storage = multer.memoryStorage()
   
   const upload = multer({ storage });
+
+
+  
 
 app.get("/projets",(req,res)=>{
     const sql="SELECT * FROM projets"
@@ -75,14 +76,22 @@ app.post("/newsletter",upload.none(),(req,res)=>{
 
 
 app.post("/temoignage",upload.single("image"),(req,res)=>{
-    //voici
-    const sql="select * from temoignage where nom=?"
+
+
+
+    const uploadcloudinary=cloudinary.uploader.upload_stream(
+        {folder:"imagestemoins"},
+        (err,result)=>{
+            if (err) {
+                console.log(err)
+            } else {
+                const sql="select * from temoignage where nom=?"
     dbtemoins.query(sql,[req.body.nomtemoin],(err,data)=>{
         if (data.length>2) {
             res.send("Trop de témoignage merci")
         } else {
              const sql="INSERT INTO temoignage (nom,profession,image,temoignage) VALUES (?,?,?,?)"
-    dbtemoins.query(sql,[req.body.nomtemoin,req.body.profession,req.file.filename,req.body.message],(err,data)=>{
+    dbtemoins.query(sql,[req.body.nomtemoin,req.body.profession,result.secure_url,req.body.message],(err,data)=>{
         if (err) {
             console.log(err)
         }else{
@@ -92,6 +101,12 @@ app.post("/temoignage",upload.single("image"),(req,res)=>{
         }
     })
     
+            }
+        }
+    )
+    
+
+    uploadcloudinary.end(req.file.buffer);
 })
 
 
