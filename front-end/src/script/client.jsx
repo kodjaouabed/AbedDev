@@ -59,7 +59,7 @@ const Client = (props) => {
        };
 
       useEffect(() => {
-        axios.get("https://abed-dev-server.vercel.app/alltemoignages")
+        axios.get("https://abedbackendportofolio.vercel.app/alltemoignages")
         .then((res)=>{settemoignage(res.data)})
           .catch((err)=>{console.log(err)})
         return () => {
@@ -76,14 +76,15 @@ const Client = (props) => {
 
 
        function temoigner(e) {
+       
           if (selectedImage!==null && nomtemoin!==null && professiontemoin!==null && messagetemoin!==null) {
           const formData=new FormData()
           formData.append("image",selectedImage)
           formData.append("nomtemoin",nomtemoin)
           formData.append("profession",professiontemoin)
           formData.append("message",messagetemoin)
-          axios.post("https://abed-dev-server.vercel.app/temoignage",formData,{headers:{"Content-Type":"multipart/form-data"}})
-          .then((res)=>{alert(res)})
+          axios.post("https://abedbackendportofolio.vercel.app/temoignage",formData,{headers:{"Content-Type":"multipart/form-data"}})
+          .then((res)=>{alert(res.data)})
           .catch((err)=>{console.log(err)})
           } else {
             alert("remplissez tout les champs du formulaire")
@@ -150,9 +151,9 @@ const Client = (props) => {
         <div className='form'>
           <div><span style={{}}><FaUser style={{color:"white"}} /></span><input  onChange={(e)=>{setnomtemoin(e.target.value)}} type="text" name="nomtemoin"  id="" placeholder='Nom / Prénom'/></div>
           <div><span style={{}}><AiTwotoneHdd style={{color:"white"}} /></span><input  onChange={(e)=>{setprofessiontemoin(e.target.value)}} type="text" name="profession"  id="" placeholder='Profession'/></div>
-          <div><input  onChange={unpload} accept="image/*" type="file" name="image"/></div>
+          <div><input  onChange={unpload} type="file" name="image"/></div>
           <div><textarea name="message" maxLength={286} onChange={(e)=>{setmessagetemoin(e.target.value)}} id="" placeholder='Veuillez enter votre témoignage'></textarea></div>
-          <div><button type="submit" onClick={temoigner} >Envoyer</button></div>
+          <div><button type='button' onClick={temoigner} >Envoyer</button></div>
         </div>
         </div>
         </div>

@@ -50,7 +50,9 @@ const Contact = (props) => {
       }
 
       function fnewsletter() {
-        axios.post("https://abed-dev-server.vercel.app/newsletter",{newsletter:newsletter})
+        const formData=new FormData()
+          formData.append("newsletter",newsletter)
+        axios.post("https://abedbackendportofolio.vercel.app/newsletter",formData,{headers:{"Content-Type":"multipart/form-data"}})
         .then((res)=>{alert(res.data)})
         .catch((err)=>{console.log(err)})
       }
