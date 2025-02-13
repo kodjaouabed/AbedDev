@@ -49,7 +49,7 @@ app.get("/projets",(req,res)=>{
 })
 
 
-app.post("/newsletter",(req,res)=>{
+app.post("/newsletter",upload.none(),(req,res)=>{
     const newsletter=req.body.newsletter
     const date=new Date()
    
@@ -60,6 +60,7 @@ app.post("/newsletter",(req,res)=>{
         if (data.length>0) {
             res.send("vous etiez  abonné")
         } else {
+            
              const sql="INSERT INTO newsletter (adresse,date) VALUES (?,?)"
     db.query(sql,[newsletter,date],(err,data)=>{
         if (err) {
@@ -105,13 +106,7 @@ app.get("/alltemoignages",(req,res)=>{
     })
 })
 
-dbtemoins.connect((err)=>{
-    if (err) {
-        console.log(err)
-    } else {
-        console.log("bien")
-    }
-})
+
 
 app.listen(3006,()=>{
     console.log("server en ecoute")
