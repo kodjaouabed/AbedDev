@@ -16,6 +16,12 @@ const db=mysql.createConnection({
     password:"cebG3LZiEzT9kVWIQBCU"
 })
 
+const dbtemoins=mysql.createConnection({
+    host:"bsl6mqjvufx6qdkw1svn-mysql.services.clever-cloud.com",
+    user:"uphgffv8pafog4ay",
+    database:"bsl6mqjvufx6qdkw1svn",
+    password:"ONHF0T9LMTYvdNPu9424"
+})
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -66,13 +72,14 @@ app.post("/newsletter",(req,res)=>{
 
 
 app.post("/temoignage",upload.single("image"),(req,res)=>{
+    //voici
     const sql="select * from temoignage where nom=?"
-    db.query(sql,[req.body.nomtemoin],(err,data)=>{
+    dbtemoins.query(sql,[req.body.nomtemoin],(err,data)=>{
         if (data.length>2) {
             res.send("Trop de témoignage merci")
         } else {
              const sql="INSERT INTO temoignage (nom,profession,image,temoignage) VALUES (?,?,?,?)"
-    db.query(sql,[req.body.nomtemoin,req.body.profession,req.file.filename,req.body.message],(err,data)=>{
+    dbtemoins.query(sql,[req.body.nomtemoin,req.body.profession,req.file.filename,req.body.message],(err,data)=>{
         if (err) {
             console.log(err)
         }else{
@@ -87,13 +94,21 @@ app.post("/temoignage",upload.single("image"),(req,res)=>{
 
 app.get("/alltemoignages",(req,res)=>{
     const sql="SELECT * FROM temoignage"
-    db.query(sql,[],(err,data)=>{
+    dbtemoins.query(sql,[],(err,data)=>{
         if (err) {
             console.log(err)
         }else{
             res.send(data)
         }
     })
+})
+
+dbtemoins.connect((err)=>{
+    if (err) {
+        console.log(err)
+    } else {
+        console.log("bien")
+    }
 })
 
 app.listen(3006,()=>{
