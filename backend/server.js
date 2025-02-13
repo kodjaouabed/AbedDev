@@ -1,7 +1,6 @@
 const express=require("express")
 const mysql=require("mysql")
 const multer=require("multer")
-const fs = require('fs');
 const path = require('path');
 const cors=require("cors")
 const app=express()
@@ -24,16 +23,11 @@ const dbtemoins=mysql.createConnection({
     password:"ONHF0T9LMTYvdNPu9424"
 })
 
-const uploadDirectory = path.join(__dirname, "../front-end/public/images/imagestemoins");
 
-// Vérifier si le dossier existe, sinon le créer
-if (!fs.existsSync(uploadDirectory)) {
-  fs.mkdirSync(uploadDirectory, { recursive: true });
-}
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null,uploadDirectory);
+      cb(null, path.join(__dirname,"../front-end/public/images/imagestemoins"));
     },
     filename: (req, file, cb) => {
       const newFilename = Date.now() + path.extname(file.originalname)
