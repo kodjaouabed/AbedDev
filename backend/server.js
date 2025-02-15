@@ -90,8 +90,8 @@ app.post("/temoignage",upload.single("image"),(req,res)=>{
         if (data.length>2) {
             res.send("Trop de témoignage merci")
         } else {
-             const sql="INSERT INTO temoignage (nom,profession,image,temoignage) VALUES (?,?,?,?)"
-    dbtemoins.query(sql,[req.body.nomtemoin,req.body.profession,result.secure_url,req.body.message],(err,data)=>{
+             const sql="INSERT INTO temoignage (nom,whatsapp,profession,image,temoignage) VALUES (?,?,?,?,?)"
+    dbtemoins.query(sql,[req.body.nomtemoin,req.body.numero,req.body.profession,result.secure_url,req.body.message],(err,data)=>{
         if (err) {
             console.log(err)
         }else{

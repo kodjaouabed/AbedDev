@@ -24,6 +24,7 @@ const Client = (props) => {
       const [nomtemoin, setnomtemoin] = useState(null);
       const [professiontemoin, setprofessiontemoin] = useState(null);
       const [messagetemoin,setmessagetemoin]=useState(null)
+      const [numerotemoin,setnumerotemoin]=useState(null)
       const [actualise,setactualise]=useState(true)
 
      const autoScroll = () => {
@@ -105,6 +106,7 @@ const handleTouchEnd = () => {
           formData.append("nomtemoin",nomtemoin)
           formData.append("profession",professiontemoin)
           formData.append("message",messagetemoin)
+          formData.append("numero",numerotemoin)
           axios.post("https://abedbackendportofolio.vercel.app/temoignage",formData,{headers:{"Content-Type":"multipart/form-data"}})
           .then((res)=>{alert(res.data);setactualise(!actualise)})
           .catch((err)=>{console.log(err)})
@@ -146,7 +148,7 @@ const handleTouchEnd = () => {
         temoignage.map((witness,key)=>{
           return(
             <div style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
-        <p className='image'><img src={witness.image} alt="" /><BiSolidCommentDetail style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} /></p>
+        <p className='image'><img src={witness.image} alt="" /><FaWhatsapp style={{color:selector.bacgroundColor==="white"?"#650065":"white",fontSize:20}} onClick={()=>{window.location.href=`https://wa.me/${witness.whatsapp}`}} /></p>
         <p className='nom'>{witness.nom}</p>
         <p className='fonction'>{witness.profession}</p>
         <p className='comment'>{witness.temoignage} </p>
@@ -176,6 +178,7 @@ const handleTouchEnd = () => {
         <div className='form'>
           <div><span style={{}}><FaUser style={{color:"white"}} /></span><input  onChange={(e)=>{setnomtemoin(e.target.value)}} type="text" name="nomtemoin"  id="" placeholder='Nom / Prénom'/></div>
           <div><span style={{}}><AiTwotoneHdd style={{color:"white"}} /></span><input  onChange={(e)=>{setprofessiontemoin(e.target.value)}} type="text" name="profession"  id="" placeholder='Profession'/></div>
+          <div><span style={{}}><FaWhatsapp style={{color:"white"}} /></span><input  onChange={(e)=>{setnumerotemoin(e.target.value)}} type="text" name="numero"  id="" placeholder='numéro whatsapp'/></div>
           <div><input  onChange={unpload} type="file" name="image"/></div>
           <div><textarea name="message" maxLength={286} onChange={(e)=>{setmessagetemoin(e.target.value)}} id="" placeholder='Veuillez enter votre témoignage'></textarea></div>
           <div><button type='button' onClick={temoigner} >Envoyer</button></div>
