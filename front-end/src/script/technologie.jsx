@@ -167,6 +167,24 @@ export default function Technologie(props) {
   };
 
 
+  // Gestion du toucher (scroll tactile)
+const handleTouchStart = (e) => {
+  setIsMouseDown(true);
+  setStartX(e.touches[0].pageX - containerRef.current.offsetLeft); // Position initiale du toucher
+  setScrollLeft(containerRef.current.scrollLeft);
+};
+
+const handleTouchMove = (e) => {
+  if (!isMouseDown) return;
+  e.preventDefault();
+  const moveX = e.touches[0].pageX - containerRef.current.offsetLeft; // Position actuelle du doigt
+  const distance = moveX - startX;
+  containerRef.current.scrollLeft = scrollLeft - distance; // Applique le mouvement
+};
+
+const handleTouchEnd = () => {
+  setIsMouseDown(false);
+};
 
 
   
@@ -195,6 +213,9 @@ export default function Technologie(props) {
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       <div  style={{boxShadow:selector.bacgroundColor==="white"?"5px 5px 10px rgba(0, 0, 0, 0.3)":"0px 0px 10px rgba(255, 255, 255,0.3)"}}>
          <svg class="progress-circle" width="100%" height="100%">

@@ -90,7 +90,7 @@
     right: 0px;
     width: 300px;
     height: 100vh;
-    background-color: black;
+    background-color: #650065;
     z-index: 150;
     padding-left: 20px;
     transition: 1s ease-in;
@@ -122,7 +122,7 @@
     margin-top: 30px;
 }
 .visiblecontainer .form div span{
-    background-color: #650065;
+    background-color: gray;
     padding: 8.5px;
 }
 .visiblecontainer .form div input{
@@ -141,9 +141,9 @@
 .visiblecontainer .form div button{
    padding: 10px;
    width: 40%;
-   border:1px solid #650065;
-   background-color: #650065;
-   color: white;
+   border:1px solid white;
+   background-color: white;
+   color: #650065;
    border-radius: 5px;
    cursor: pointer;
 }

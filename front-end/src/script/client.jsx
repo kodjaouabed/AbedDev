@@ -59,6 +59,27 @@ const Client = (props) => {
          containerRef.current.scrollLeft = scrollLeft - distance;  // Applique le mouvement au défilement
        };
 
+
+
+       // Gestion du toucher (scroll tactile)
+const handleTouchStart = (e) => {
+  setIsMouseDown(true);
+  setStartX(e.touches[0].pageX - containerRef.current.offsetLeft); // Position initiale du toucher
+  setScrollLeft(containerRef.current.scrollLeft);
+};
+
+const handleTouchMove = (e) => {
+  if (!isMouseDown) return;
+  e.preventDefault();
+  const moveX = e.touches[0].pageX - containerRef.current.offsetLeft; // Position actuelle du doigt
+  const distance = moveX - startX;
+  containerRef.current.scrollLeft = scrollLeft - distance; // Applique le mouvement
+};
+
+const handleTouchEnd = () => {
+  setIsMouseDown(false);
+};
+
       useEffect(() => {
         axios.get("https://abedbackendportofolio.vercel.app/alltemoignages")
         .then((res)=>{settemoignage(res.data)})
@@ -116,6 +137,9 @@ const Client = (props) => {
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       
       {
@@ -146,7 +170,7 @@ const Client = (props) => {
     </motion.div>
            
         <div className="visiblecontainer" style={{display:visibleContainer===true?"block":'none'}}>
-          <FontAwesomeIcon onClick={()=>{setVisibleContainer(false)}} icon={faClose} style={{color:"white"}} />
+          <FontAwesomeIcon onClick={()=>{setVisibleContainer(false)}} icon={faClose} style={{color:"white",fontSize:25}} />
         <p><h6>Ajoutez un témoignage</h6></p>
         <div className='hr'></div>
         <div className='form'>
