@@ -68,7 +68,7 @@ function App() {
     chargement==="oui"?
     <div className="App">
         <Acceuil clickapropos={clickapropos} clickservices={clickservice} clickcompetences={clickcompetences} clickportofolio={clickportofolio}  clicktemoignage={clicktemoignage} clickcontact={clickcontact}  />
-        <Apropos refpropos={refapropos}  />
+        <Apropos refpropos={refapropos} clickembauche={clickcontact} />
         <Services refservices={refservices}  />
         <Technologie reftechnologies={reftechnologies} />
         <Portofolio refportofolio={refportofolio}  />

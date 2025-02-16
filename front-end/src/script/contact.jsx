@@ -11,6 +11,7 @@ import axios from "axios"
 
 const Contact = (props) => {
     const selector = useSelector(state => state.Background);
+    const  translate = useSelector(state => state.lg);
     const [nom,setnom]=useState(null)
     const [email,setemail]=useState(null)
     const [tel,settel]=useState(null)
@@ -64,9 +65,9 @@ const Contact = (props) => {
              whileInView={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.7 }}
               className='title_contact'>
-            <h5>Contactez-Moi</h5>
+            <h5>{translate.lg === "fr" ?"Contactez-Moi ":"Contact Me" }</h5>
             <div className='speciality'>
-            <div></div><p>Parlons-en de vos projets</p>
+            <div></div><p>{translate.lg === "fr" ?"Parlons-en de vos projets ":"Let's talk about your projects" }</p>
             </div>
            </motion.div>
 
@@ -79,11 +80,11 @@ const Contact = (props) => {
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.7 }}
                  action="" onSubmit={envoyer} ref={form}>
-                <div><span style={{}}><FaUser style={{color:"white"}} /></span><input  onChange={(e)=>{setnom(e.target.value)}} type="text" name="nom"  id="" placeholder='Nom / Prénom'/></div>
+                <div><span style={{}}><FaUser style={{color:"white"}} /></span><input  onChange={(e)=>{setnom(e.target.value)}} type="text" name="nom"  id="" placeholder={translate.lg === "fr" ?"Nom / Prénom":"Name / First name" }/></div>
                 <div><span style={{}}><MdEmail style={{color:"white"}} /></span><input onChange={(e)=>{setemail(e.target.value)}}  type="email" name="email"  id="" placeholder='Email'/></div>
-                <div><span style={{}}><BsFillTelephoneFill style={{color:"white"}} /></span><input onChange={(e)=>{settel(e.target.value)}}  type="text" name="tel"  id="" placeholder='Téléphone'/></div>
-                <div><textarea name="message" onChange={(e)=>{setmessage(e.target.value)}} id="" placeholder='Merci de  détaillé  le plus possible votre besoin afin de faciliter nos futurs échanges'></textarea></div>
-                <div><button type="submit" onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol}>Envoyer</button></div>
+                <div><span style={{}}><BsFillTelephoneFill style={{color:"white"}} /></span><input onChange={(e)=>{settel(e.target.value)}}  type="text" name="tel"  id="" placeholder={translate.lg === "fr" ?"Téléphone":"Phone" }/></div>
+                <div><textarea name="message" onChange={(e)=>{setmessage(e.target.value)}} id="" placeholder={translate.lg === "fr" ?"Merci de  détaillé  le plus possible votre besoin afin de faciliter nos futurs échanges":"Please detail your needs as much as possible in order to facilitate our future exchanges." }></textarea></div>
+                <div><button type="submit" onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol}>{translate.lg === "fr" ?"Envoyer":"Send" }</button></div>
                 </motion.form>
 
               
@@ -92,7 +93,7 @@ const Contact = (props) => {
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.7 }}
                 className='reseau'>
-                <div><input type="email" onChange={(e)=>{setnewsletter(e.target.value)}}  placeholder='email' /><button onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol} onClick={fnewsletter}>S'abonner</button></div>
+                <div><input type="email" onChange={(e)=>{setnewsletter(e.target.value)}}  placeholder='email' /><button onMouseOver={buttonsurvol} onMouseOut={buttonnosurvol} onClick={fnewsletter}>{translate.lg === "fr" ?"S'abonner":"Subscribe" }</button></div>
                    <div><FaLocationDot style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><p>CALAVI ZE COTONOU</p></div>
                    <div><BsFillTelephoneFill style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><a href="tel:+2290168364255"><p>+229 0168364255</p></a></div>
                    <div><MdEmail style={{padding:10,backgroundColor:"#650065",borderRadius:"50%",color:"white"}} /><a href="mailto:abnegko@gmail.com"><p>abnegko@gmail.com</p></a></div>

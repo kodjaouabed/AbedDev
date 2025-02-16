@@ -255,6 +255,22 @@ section .container_info  .conteneur_button button a{
    font-weight: 100;
 }
 
+.icontranslate{
+   width: 50px;
+   height: 50px;
+   border-radius: 25px;
+   position: fixed;
+   bottom: 50px;
+   right: 0px;
+   z-index: 100;
+   cursor: pointer;
+}
+
+.icontranslate img{
+    width:40px;
+    height:25px;
+ }
+
 
 
 @media screen and (max-width:1000px) {

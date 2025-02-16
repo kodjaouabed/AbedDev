@@ -8,6 +8,7 @@ import axios from "axios"
 const Portofolio = (props) => {
     const [projet,setProjet]=useState([])
     const  selector = useSelector(state => state.Background);
+    const  translate = useSelector(state => state.lg);
     useEffect(() => {
     axios.get("https://abedbackendportofolio.vercel.app/projets")
     .then(resultat=>setProjet(resultat.data))
@@ -32,7 +33,7 @@ const Portofolio = (props) => {
               className='title_portofolio'>
             <h5>Portofolio</h5>
             <div className='speciality'>
-            <div></div><p>Mes projets web & mobile</p>
+            <div></div><p> {translate.lg === "fr" ?"Mes projets web & mobile":"My web & mobile projects" }</p>
             </div>
            </motion.div>
 

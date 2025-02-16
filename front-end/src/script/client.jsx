@@ -14,6 +14,8 @@ import axios from 'axios';
 
 const Client = (props) => {
       const selector = useSelector(state => state.Background);
+      const  translate = useSelector(state => state.lg);
+
       const containerRef = useRef(null);
       const [isMouseDown, setIsMouseDown] = useState(false);
       const [startX, setStartX] = useState(0);
@@ -124,11 +126,11 @@ const handleTouchEnd = () => {
              whileInView={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.7 }}
               className='title_client'>
-            <h5>Témoingnages</h5>
+            <h5>{translate.lg === "fr" ?"Témoingnages":"Testimonials" }</h5>
             <div className='speciality'>
-            <div></div><p>Témoingnages de quelques clients</p>
+            <div></div><p>{translate.lg === "fr" ?"Témoingnages de quelques clients ":"Testimonials from some customers" }</p>
             </div>
-            <button onClick={()=>{setVisibleContainer(true)}}>Témoignez</button>
+            <button onClick={()=>{setVisibleContainer(true)}}>{translate.lg === "fr" ?"Témoignez":"Testify" }</button>
            </motion.div>
  <motion.div
       initial={{ opacity: 0, y: 100 }}

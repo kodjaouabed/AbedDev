@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Technologie(props) {
   const selector=useSelector(state=>state.Background);
+  const  translate = useSelector(state => state.lg);
   const containerRef = useRef(null);
   const [isMouseDown, setIsMouseDown] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -201,7 +202,7 @@ const handleTouchEnd = () => {
       className='title_tech'>
       <h5>Technologies</h5>
         <div className='speciality'>
-        <div></div><p>Mes technologies utilisées</p>
+        <div></div><p>{translate.lg === "fr" ?"Mes technologies utilisées":"My technologies used" }</p>
       </div>
       </motion.div>
       <motion.div

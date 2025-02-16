@@ -4,3 +4,10 @@ export function BackgroundChange(item) {
         payload:item
     })
 }
+
+export function Translate(item) {
+    return({
+        type:"translate",
+        payload:item
+    })
+}

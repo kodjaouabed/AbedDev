@@ -1,5 +1,6 @@
 const initialBackground={
-    Background:{bacgroundColor:"white",colorText:"black"}
+    Background:{bacgroundColor:"white",colorText:"black"},
+    lg:{lg:"fr"}
 }
 
 
@@ -23,7 +24,22 @@ export function ReduxReducer(state=initialBackground,action) {
                  }
                 )
             }
-
+         case "translate":
+            if (state.lg.lg==="fr") {
+                return(
+                    {
+                     ...state,
+                     lg:{lg:"en"}
+                    }
+                   )
+            } else {
+                return(
+                    {
+                     ...state,
+                     lg:{lg:"fr"}
+                    }
+                   )
+            }
         default:
             return state
     }
