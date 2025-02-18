@@ -283,7 +283,7 @@ function fmenu() {
         </div>
 
         <div className="icontranslate" >
-          <img  src={translate.lg==="fr"?"./images/fr.png":"./images/en.png"} alt="" onClick={()=>{dispatch(Translate(translate))}} />
+          <img  src={translate.lg==="fr"?"./images/en.png":"./images/fr.png"} alt="" onClick={()=>{dispatch(Translate(translate))}} />
         </div>
     </div>
   )
