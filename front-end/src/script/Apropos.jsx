@@ -15,7 +15,7 @@ const Apropos = (props) => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className='image_présentation'><img src={selector.bacgroundColor==="white"?"./images/presentation.png":"./images/presentationn.png"} alt="" />
+            className='image_présentation'><img src={selector.bacgroundColor==="white"?"./images/Designtete.png":"./images/Designteten.png"} alt="" />
             </motion.div>
             <div className='apropos'>
             <motion.div 

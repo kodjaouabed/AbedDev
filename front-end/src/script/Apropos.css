@@ -41,6 +41,7 @@
 .container_apropos .image_présentation img{
     width: 100%;
     height: 100vh;
+    margin-top: 150px;
 }
 
 .container_apropos .apropos p h6{
@@ -117,6 +118,17 @@
        width: 100%;
     }
     
+}
+
+
+@media screen and (max-width:500px){
+   
+    .container_apropos .image_présentation{
+        width: 100%;
+    }
+    .container_apropos .image_présentation img{
+        height: 70vh;
+    }
 }
 
 
