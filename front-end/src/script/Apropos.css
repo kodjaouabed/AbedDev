@@ -122,7 +122,6 @@
 
 
 @media screen and (max-width:500px){
-   
     .container_apropos .image_présentation{
         width: 100%;
     }
@@ -138,6 +137,9 @@
     
     .container_apropos .apropos{
         min-height: 120vh;
+    }
+    .container_apropos .image_présentation img{
+        height: 60vh;
     }
 }
 
