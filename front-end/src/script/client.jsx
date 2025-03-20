@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faClose} from '@fortawesome/free-solid-svg-icons'
 import { AiTwotoneHdd } from "react-icons/ai";
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 
 const Client = (props) => {
       const selector = useSelector(state => state.Background);
@@ -120,7 +121,10 @@ const handleTouchEnd = () => {
      
     return (
         <div className='section_client' ref={props.refclient}>
-            
+            <Helmet>
+                  <meta name="description" content="Développeur web et mobile Abed-Négo Kodjaou, expert en React.js, React Native et Node.js. Découvrez mes projets et mes compétences en développement." />
+                  <title>Développeur Web & Mobile - Abed-Négo Kodjaou</title>
+                  </Helmet>
             <motion.div 
              initial={{ opacity: 0, y: 100 }}
              whileInView={{ opacity: 1, y: 0 }}

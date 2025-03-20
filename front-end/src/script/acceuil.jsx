@@ -11,6 +11,7 @@ import { Translate } from './reduxAction';
 import { useDispatch,useSelector } from 'react-redux'
 import { motion } from "framer-motion";
 import { useRef } from 'react';
+import {Helmet} from "react-helmet"
 
 
 
@@ -149,6 +150,10 @@ function fmenu() {
  
   return (
     <div ref={acceuil} className='container_acceuil'>
+      <Helmet>
+      <meta name="description" content="Développeur web et mobile Abed-Négo Kodjaou, expert en React.js, React Native et Node.js. Découvrez mes projets et mes compétences en développement." />
+      <title>Développeur Web & Mobile - Abed-Négo Kodjaou</title>
+      </Helmet>
         <motion.nav
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

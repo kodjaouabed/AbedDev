@@ -2,6 +2,7 @@ import React from 'react';
 import "./Apropos.css"
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -10,7 +11,10 @@ const Apropos = (props) => {
     const  translate = useSelector(state => state.lg);
     return (
         <div className='container_apropos' ref={props.refpropos}>
-
+      <Helmet>
+  <meta name="description" content="Freelance en développement web et mobile Abed-Négo Kodjaou. Créez votre site web ou application mobile à des prix abordables avec un travail de qualité. Contactez-moi pour un devis personnalisé." />
+  <title>Développeur Web & Mobile Freelance - Abed-Négo Kodjaou</title>
+   </Helmet>
             <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
